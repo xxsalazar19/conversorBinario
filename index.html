@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversor binario</title>
 </head>
 <body>
-    
+<form class="form">
+    <h1 class="form__title">Convertidor binario</h1>
+    <p class="form__paragraph">Convierte el numero que quieras a binario y viceversa.</p>
+    <div class="form__container">
+        
+        <div class="form__group">
+            <input type="number" id="in-decimal" class="form__input" placeholder=" ">
+            <label for="in-decimal" class="form__label">Inserta un numero decimal</label>
+            <span class="form__line"></span>
+        </div>
+        <div class="out-container">
+            <p class="out-binary" id="binary-answer"></p>
+        </div>
+        
+        <div class="form__group">
+            <input type="number" id="in-binary" class="form__input" placeholder=" ">
+            <label for="in-binary" class="form__label">Inserta un numero binario</label>
+            <span class="form__line"></span>
+        </div>
+        <div class="out-container">
+            <p class="out-decimal" id="decimal-answer"></p>
+        </div>
+        
+        <input type="button" value="Convertir" class="form__submit" onclick="converterDecimalToBinary();converterBinaryToDecimal()" >
+
+    </div>
+</form>
+<script src="scripts.js"></script>
 </body>
 </html>
